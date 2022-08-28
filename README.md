@@ -8,7 +8,7 @@ that image for your windows background image
 - node v16.15
 
 # How to clone
-git clone https://
+git clone https://github.com/kypanz/discord-windows-wallpaper.git
 
 # How to install
 npm install
