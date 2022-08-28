@@ -27,8 +27,9 @@ client.once('ready', () => {
 // ACTIONS
 client.on('messageCreate', async (msg) => {
     try {
-
+        console.log('actual author id => ',msg.author.id);
         if(msg.channelId != process.env.DETECT_THIS_CHANNEL) return;
+        if(msg.author.id != process.env.ONLY_FROM_USER_ID) return;
         console.log('new message id => ',msg.id);
         lastMessage = msg;
         
